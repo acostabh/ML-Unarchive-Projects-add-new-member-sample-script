@@ -43,7 +43,7 @@ Disclaimer: These scripts are provided as sample code and they are NOT official 
   4. Go to the Mavelink web interface and confirm that the Projects are now indeed un-archived
   5. View results/response on log file in the same folder as the script (yyy-mm-dd_log.txt)
 
-## Inviting Account Members the Projects ##
+## Inviting Account Members to Projects ##
 This step can be easily done via the Web Interface instead, but it's been added here as part of the proof of concept for this scenario.
 
   1. Open terminal
