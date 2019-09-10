@@ -3,11 +3,11 @@
 This shell script bundle (Mac/Linux) uses various Mavenlink API endpoints to:
 
   1. Get a list of archived Projects onto a CSV file (ML_Archived_Projects.csv)
-  2. Get a list of account users onto aCSV
-  3. Bulk un-archive Projects, from the ML_Archived_Projects.csv file above
-  4. Bulk invite account members to the newly un-archived projects, from the ML_Archived_Projects.csv file above
+  2. Get a list of account users onto a CSV files (users.csv)
+  3. Bulk un-archive Projects
+  4. Bulk invite account members to the newly un-archived projects
 
-Disclaimer: These scripts are provided as sample code and they are NOT official Mavenlink tools, but generated as part of an exercise to investigate the use of Mavenlink's API based on specific scenarios. The developer accepts no liability for any issues that could arise from using these scripts.
+Disclaimer: These scripts are provided as sample code and they are NOT official Mavenlink tools, they have been generated as part of an exercise to investigate the use of Mavenlink's API based on specific scenarios. The developer accepts no liability for any issues that could arise from using these scripts.
 
 ## Pre-Requisites ##
 
@@ -22,11 +22,11 @@ Disclaimer: These scripts are provided as sample code and they are NOT official 
 ## Data prep ##
 
   1. open terminal
-  2. Navigate to the folder where you saved the script
+  2. Navigate to the folder where you saved the scripts
     - E.G: cd ~/Documents/ML-Unarchive-Projects-add-new-member-sample-script
   3. Run the script: ./get_projects.sh w and ./get_users.sh w
     - this step will write out the ML_Archived_Projects.csv and users.csv files into the folder above
-  4. Follow the instructions on the prompt
+  4. Follow the instructions on the prompt (if any)
   5. Use the file users.csv to update the ML_Archived_Projects.csv file.
       - Delete from ML_Archived_Projects.csv any project that you DON'T want to un-archive
       - Add the respective user IDs to the column "user_id" on ML_Archived_Projects.csv. You can add multiple IDs to this field, but they must each be separated by a / without spaces.
