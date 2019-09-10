@@ -46,12 +46,11 @@ Disclaimer: These scripts are provided as sample code and they are NOT official 
 ## Inviting Account Members the Projects ##
 This step can be easily done via the Web Interface instead.
 
-
-    1. Open terminal
-    2. Navigate to the folder where you saved the script
-      - E.G: cd ~/Documents/ML-Unarchive-Projects-add-new-member-sample-script
-    3. Run the script: ./bulk_invite.sh
-      - this script uses the ML_Archived_Projects.csv file to select the Project ID and User ID to proceed. Please ensure the file and script are in the same folder.
-    4. Go to the Mavelink web interface and confirm that the account members ahve been added to the Projects.
-      - Note that all members will be added with the default permissions of "Edit" and "Can Invite".
-    5. View results/response on log file in the same folder as the script (yyy-mm-dd_log.txt)
+  1. Open terminal
+  2. Navigate to the folder where you saved the script
+    - E.G: cd ~/Documents/ML-Unarchive-Projects-add-new-member-sample-script
+  3. Run the script: ./bulk_invite.sh
+    - this script uses the ML_Archived_Projects.csv file to select the Project ID and User ID to proceed. Please ensure the file and script are in the same folder.
+  4. Go to the Mavelink web interface and confirm that the account members ahve been added to the Projects.
+    - Note that all members will be added with the default permissions of "Edit" and "Can Invite".
+  5. View results/response on log file in the same folder as the script (yyy-mm-dd_log.txt)
