@@ -37,7 +37,7 @@ else
       echo ""
       echo "######################## User List ######################"
       echo "This is a sample view only list to write it out to a CSV,"
-      echo "run he script with the w switch: ./get_users.sh w"
+      echo "run the script with the w switch: ./get_users.sh w"
       echo "#########################################################"
       echo ""
       for (( i=0; i < $user_count; ++i ))
