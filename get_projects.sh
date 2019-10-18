@@ -1,8 +1,7 @@
 #!/bin/sh
-echo off
 token=$(jq -r ".token" token.json)
 max_pages=200 #maximum number of results per page (200 is the limit set by Mavenlink)
-archived=$(curl -H 'Authorization: Bearer '$token 'https://api.mavenlink.com/api/v1/workspaces?archived=only&per_page='$max_pages'&page=1')
+archived=$(curl -s -H 'Authorization: Bearer '$token 'https://api.mavenlink.com/api/v1/workspaces?archived=only&per_page='$max_pages'&page=1')
 count=$(jq -n "$archived" | jq -r '.count')
 page_count=$(jq -n "$archived" | jq -r '.meta.page_count')
 
@@ -18,7 +17,7 @@ else
     for (( i=1; i < $((page_count+1)); ++i ))
       do
         if [ $i != 1 ]; then
-          archived=$(curl -H 'Authorization: Bearer '$token 'https://api.mavenlink.com/api/v1/workspaces?archived=only&per_page='$max_pages'&page='$i)
+          archived=$(curl -s -H 'Authorization: Bearer '$token 'https://api.mavenlink.com/api/v1/workspaces?archived=only&per_page='$max_pages'&page='$i)
           count=$(jq -n "$archived" | jq -r '.count')
         fi
         #iterate the users list per page
